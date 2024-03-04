@@ -1,6 +1,6 @@
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Subscription } from '../../types';
+import { Subscription, User } from '../../types';
 
 @Component({
   selector: 'subscriptions',
@@ -12,4 +12,5 @@ import { Subscription } from '../../types';
 })
 export class SubscriptionsComponent {
   subscriptions: Subscription[] | null = null;
+  user: User | null = null;
 }
