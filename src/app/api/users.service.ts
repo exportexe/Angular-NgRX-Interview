@@ -10,18 +10,23 @@ export class UsersService {
     return of([
       {
         id: '1',
-        name: 'Mozilla Firefox',
+        name: 'John Doe',
         age: 38,
       },
       {
         id: '2',
-        name: 'Internet Explorer',
+        name: 'Lorem Ipsum',
         age: 81,
       },
       {
         id: '3',
-        name: 'Google Chrome',
+        name: 'Harry Potter',
         age: 24,
+      },
+      {
+        id: '4',
+        name: 'Albus Dumbledore',
+        age: 90,
       },
     ] as User[]);
   }
