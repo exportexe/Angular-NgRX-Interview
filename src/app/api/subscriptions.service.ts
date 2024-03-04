@@ -29,6 +29,18 @@ export class SubscriptionsService {
         price: 14.0,
         userId: '2',
       },
+      {
+        id: '4',
+        name: 'Apple Arcade',
+        price: 320.0,
+        userId: '1',
+      },
+      {
+        id: '5',
+        name: 'YouTube Premium',
+        price: 20.0,
+        userId: '3',
+      },
     ] as Subscription[]).pipe(
       filter(Boolean),
       map((subscriptions) => subscriptions.find((sub) => sub.userId === userId))
