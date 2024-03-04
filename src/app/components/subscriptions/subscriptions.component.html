@@ -1,0 +1,25 @@
+<div class="subscription-list__container">
+  <h2>Subscription List</h2>
+
+  <table class="subscription-list__table">
+    <thead>
+      <tr>
+        <td>Id:</td>
+        <td>Name:</td>
+        <td>User Id:</td>
+        <td>Price:</td>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngIf="subscriptions; else noSubscriptions">
+        <tr *ngFor="let subscription of subscriptions">
+          <td>{{ subscription.id }}</td>
+          <td>{{ subscription.name }}</td>
+          <td>{{ subscription.price }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noSubscriptions> No Subscriptions </ng-template>
